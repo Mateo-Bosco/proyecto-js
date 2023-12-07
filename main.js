@@ -140,7 +140,7 @@ const pintarCarrito = () => {
             pintarCarrito();
         });
 
-        let eliminar = carritoContent.querySelector("delete-product");
+        let eliminar = carritoContent.querySelector(".delete-product");
 
         eliminar.addEventListener("click", () => {
             eliminarProducto(product.id);
