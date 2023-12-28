@@ -180,3 +180,23 @@ const carritoCounter = () => {
 };
 
 carritoCounter();
+
+(async () => {
+    const { value: accept } = await Swal.fire({
+      title: "Terminos y condiciones",
+      input: "checkbox",
+      inputValue: 1,
+      inputPlaceholder: `
+        Estoy de acuerdo con los terminos y condiciones
+      `,
+      confirmButtonText: `
+        Continuar&nbsp;<i class="fa fa-arrow-right"></i>
+      `,
+      inputValidator: (result) => {
+        return !result && "Necesitas estar de acuerdo con los T&C";
+      }
+    });
+    if (accept) {
+      Swal.fire("Estas de acuerdo con los T&C");
+    }
+  })()
