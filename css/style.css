@@ -160,3 +160,16 @@ body{
 .restar{
     cursor: pointer;
 }
+.link{
+    list-style: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    margin-top: 4vh;
+}
+.container-ancla{
+    display: flex;
+    flex-wrap: wrap;
+}
